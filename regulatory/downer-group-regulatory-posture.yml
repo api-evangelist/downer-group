@@ -1,0 +1,75 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://downergroup.com/policies/
+- https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+- https://downergroup.com/wp-content/uploads/sites/4/2026/08/Privacy-Standard-for-New-Zealand.pdf
+- https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-RM-PO002_Generative_Artificial_Intelligence_Policy-2.pdf
+signals:
+  data_subject_request:
+    url: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+    section: 4.10 Access, Correction and Further Information
+    note: Access and correction rights (Australian/NZ privacy law framing) handled by the Privacy Officer by email; no erasure or portability right is stated. Complaints may be escalated to the OAIC or NZ Privacy Commissioner (section 4.12).
+    channel: downer.companysecretary@downergroup.com
+    evidence:
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We will provide you with access to your Personal Information held by us unless we are permitted by applicable law to refuse to provide you with such access.
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We will respond to all requests for access and/or correction within a reasonable time.
+  data_residency:
+    url: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+    section: 4.8 Disclosure of Personal Information Overseas
+    note: No residency commitment; the policy discloses that personal information may be stored and transferred outside Australia/New Zealand, naming destination countries.
+    evidence:
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We may engage third-party providers to host Personal Information, which may result in storage of Personal Information in countries other than the country where it was collected.
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: b) our contracted third-party providers located outside Australia or New Zealand, including UK, EU, USA, India and Philippines.
+  subprocessors:
+    url: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+    section: Disclosure of Personal Information
+    note: Only categories of recipients are named; no named subprocessor list is published.
+    evidence:
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: a) our business partners, contractors, subcontractors and service providers (including IT services providers)
+  data_retention:
+    url: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+    section: Storage
+    note: Purpose-bound retention with destruction or de-identification; no fixed retention periods stated. The NZ Privacy Standard applies the same rule to biometric information.
+    evidence:
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-CS-PO002_Privacy_Policy_August_2025-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We will take reasonable steps to destroy or permanently de-identify Personal Information once we no longer require it for our business purposes, unless we are required by law to retain it.
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2026/08/Privacy-Standard-for-New-Zealand.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Downer will retain Biometric Information for so long as it is required for the authorised purpose, or as required by applicable law.
+  ai_transparency:
+    url: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-RM-PO002_Generative_Artificial_Intelligence_Policy-2.pdf
+    section: Our Purpose
+    note: A one-page internal-use GenAI policy committing to transparency and human review; the NZ standard states fatigue-monitoring incident decisions are not solely automated. No model cards or AI system disclosures are published.
+    evidence:
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-RM-PO002_Generative_Artificial_Intelligence_Policy-2.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: So that it is clear when and why GenAI is being used, how it operates and the outcomes it will generate.
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2025/12/DG-RM-PO002_Generative_Artificial_Intelligence_Policy-2.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: So that functions, decisions or outputs are the subject of human review as appropriate to the specific risk profile of the solution.
+    - source: https://downergroup.com/wp-content/uploads/sites/4/2026/08/Privacy-Standard-for-New-Zealand.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: System-generated alerts are intended to immediately alert the driver. Decisions involving incidents are not made solely on automated processing.
+note: Downer Group is an Australian/NZ infrastructure services company with no public API. Posture comes from its corporate policies hub. No incident-notification commitment, SBOM, accessibility conformance report, transparency report, Global Privacy Control handling or named subprocessor list was found.

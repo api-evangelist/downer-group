@@ -1,0 +1,6 @@
+name: Downer Group rate limits
+generated: '2026-10-21'
+method: none
+limit_count: 0
+limits: []
+note: No public API or documentation exists, so no rate limits are published. Checked downergroup.com (200) and a web search for a Downer developer portal, SDK or API, which found nothing.

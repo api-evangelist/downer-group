@@ -1,0 +1,60 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.downergroup.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: downergroup.com
+  role: api
+  relation: own
+- host: downergroup.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Newsroom
+  - Support
+  - PrivacyPolicy
+  - InvestorRelations
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: downergroup.com
+  role: website
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform

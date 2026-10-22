@@ -1,0 +1,46 @@
+name: Downer Group MCP server (advertised, gated)
+type: MCPServer
+provider: downer-group
+generated: '2026-10-21'
+method: probed
+status: advertised-gated
+source: https://downergroup.com/.well-known/oauth-protected-resource
+description: >-
+  downergroup.com publishes an OAuth 2.0 Protected Resource Metadata document
+  (RFC 9728) naming an MCP-scoped resource on its WordPress REST API
+  (/wp-json/mcp/mcp-oauth-server, scopes_supported [mcp], authorization server
+  https://downergroup.com). This looks like what a WordPress MCP plugin
+  exposes, not a documented developer product. Downer publishes no MCP
+  documentation, tool list, OpenAPI or developer portal. A GET and one MCP
+  JSON-RPC initialize sent to the advertised resource both got a Cloudflare
+  "Attention Required" 403 page, so no server handshake or tools/list was
+  seen. No tool names are recorded because none are published or observed.
+deployment:
+  mode: remote
+  endpoint: https://downergroup.com/wp-json/mcp/mcp-oauth-server
+  auth: oauth
+  verified: probed
+  note: >-
+    The endpoint is the `resource` value from the provider's own
+    oauth-protected-resource document. It has not been confirmed as a
+    working MCP transport: Cloudflare blocked both probes before they
+    reached the origin.
+evidence:
+  - url: https://downergroup.com/.well-known/oauth-protected-resource
+    method: GET
+    status: 200
+    content_type: application/json
+    body: '{"resource":"https://downergroup.com/wp-json/mcp/mcp-oauth-server","authorization_servers":["https://downergroup.com"],"bearer_methods_supported":["header"],"scopes_supported":["mcp"]}'
+  - url: https://downergroup.com/wp-json/mcp/mcp-oauth-server
+    method: GET
+    status: 403
+    note: Cloudflare "Attention Required" challenge page
+  - url: https://downergroup.com/wp-json/mcp/mcp-oauth-server
+    method: POST (MCP JSON-RPC initialize)
+    status: 403
+    note: Cloudflare "Attention Required" challenge page
+  - url: https://downergroup.com/.well-known/oauth-authorization-server
+    method: GET
+    status: 301
+tools: []
+tools_note: No documented tool table and no tools/list was reachable.

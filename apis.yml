@@ -1,23 +1,89 @@
 aid: downer-group
+
 name: Downer Group
-description: 'Downer Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Downer Group (Downer) is a leading provider of integrated infrastructure services across Australia and New Zealand, listed on the Australian Securities Exchange and the New Zealand Exchange and employing more than 26,000 people. It works across sectors including airports, defence, education, energy, health, housing, rail, roads and bridges, marine and ports, and facilities management. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); no public API, developer portal or documentation was found on downergroup.com.
+
 url: https://raw.githubusercontent.com/api-evangelist/downer-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Infrastructure
+- Engineering
+- Facilities Management
+- Transport
+- Australia
+- New Zealand
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://downergroup.com/wp-content/uploads/sites/4/2026/03/Downer-Opengraph-1.png
+
 common:
+- type: WellKnown
+  url: well-known/downer-group-well-known.yml
+- type: Hosts
+  url: hosts/downer-group-hosts.yml
+- type: Vendors
+  url: vendors/downer-group-vendors.yml
+- type: DomainSecurity
+  url: security/downer-group-domain-security.yml
 - type: Website
   url: https://downergroup.com/
+- type: Newsroom
+  url: https://downergroup.com/news/
+- type: Support
+  url: https://downergroup.com/contact-us/
+- type: PrivacyPolicy
+  url: https://downergroup.com/policies/
+- type: InvestorRelations
+  url: https://downergroup.com/investor-centre/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/downer/
+- type: YouTube
+  url: https://www.youtube.com/user/DownerGroup
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified by homepage title "Downer Group | Enabling communities to thrive"; no developer portal, API docs or API pointers published on the site.
+  evidence:
+  - url: https://downergroup.com/
+    status: 200
+  - url: https://downergroup.com/contact-us/
+    status: 200
+  - url: https://downergroup.com/policies/
+    status: 200
+  - url: https://downergroup.com/news/
+    status: 200
+  - url: https://downergroup.com/investor-centre/
+    status: 200
+  - url: https://www.linkedin.com/company/downer/
+    status: 200
+  - url: https://www.youtube.com/user/DownerGroup
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

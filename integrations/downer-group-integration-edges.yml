@@ -1,0 +1,23 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/downer-group/integrations
+- https://n8n.io/integrations/downer-group/
+- https://composio.dev/toolkits/downer-group
+- https://monid.ai/tools/downer-group
+checked:
+- https://zapier.com/apps/downer/integrations
+- https://www.make.com/en/integrations/downer
+- https://n8n.io/integrations/downer
+- https://downergroup.com/partners/
+- https://github.com/downergroup
+- https://downergroup.com/
+- https://composio.dev/toolkits/downer-group
+- https://monid.ai/tools/downer-group
+- https://n8n.io/integrations/downer-group/
+- https://zapier.com/apps/downer-group/integrations
+summary: No published integrations, marketplace listings or partner-app pages were found for Downer Group, which
+  publishes no API or developer documentation.
+marketplace_apps: []
+edges: []
+templates: []
